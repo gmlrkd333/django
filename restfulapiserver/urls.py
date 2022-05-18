@@ -1,16 +1,3 @@
-from django.urls import path, include, re_path, path
-from django.contrib.auth.models import User
-from rest_framework import routers, serializers, viewsets
-from addresses import views
-from django.contrib import admin
-
-
-# Wire up our API using automatic URL routing.
-# Additionally, we include login URLs for the browsable API.
-urlpatterns = [
-    path('addresses/', views.address_list),
-    path('addresses/<int:pk>/', views.address),
-    path('app_login/', views.app_login),
-    path('admin/', admin.site.urls),
-    re_path(r'^api-auth/', include('rest_framework.urls', namespace='rest_framework'))
-]
+version https://git-lfs.github.com/spec/v1
+oid sha256:d969068b6c9b5645af6057a8bf055dc30b330120209b3a7f3b4d798c4403b8ae
+size 617
